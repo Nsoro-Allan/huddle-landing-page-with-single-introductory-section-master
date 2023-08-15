@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background: hsl(257, 40%, 49%);
+    font-family: 'Open Sans', sans-serif;
+    background-image: url(./images/bg-desktop.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* width: 100%;
+    max-height: 95vh; */
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: 1% 3% 0% 3%;
+}
+
+.container-title{
+    padding-top: 10px;
+}
+
+.container-title img{
+    width: 11%;
+}
+
+.main-content{
+    display: flex;
+    flex-direction: row;
+    padding-top: 30px;
+}
+
+.main-image{
+    padding-top: 5px;
+}
+
+.main-image img{
+    width: 600px;
+}
+
+.main-description{
+    padding-top: 40px;
+    padding-left: 60px;
+}
+
+.main-description h1{
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+.main-description p{
+    padding-top: 15px;
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+.main-description button{
+    margin-top: 20px;
+    padding: 10px;
+    color: hsl(257, 40%, 49%);
+    background: #fff;
+    border-radius: 50px;
+    border: 1px solid #fff;
+    width: 25%;
+    transition: all ease-in-out 0.3s;
+}
+
+.main-description button:hover{
+    background: hsl(300, 69%, 71%);
+    color: #fff;
+    border: 1px solid hsl(300, 69%, 71%);
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+}
+
+.social-media{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 1%;
+}
+
+.social-icon{
+    margin-right: 1.5%;
+    margin-top: -1%;
+}
+
+.social-icon a i{
+    color: #fff;
+    padding: 8px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    font-size: 0.8rem;
+}
+
+.social-icon a i:hover{
+    color: hsl(300, 55%, 54%);
+    border: 1px solid hsl(300, 55%, 54%);
+    cursor: pointer;
+}
+
+/* Responsive Starts Here */
+@media only screen and (max-width: 390px){
+    .main-content{
+        display: flex;
+        flex-direction: column;
+        padding-top: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container-title img{
+        width: 25%;
+    }
+
+    
+    .main-image{
+        padding-top: 5px;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        height: 400px;
+        /* margin: 1% 3% 0% 3%; */
+    }
+
+    .main-image img{
+        margin-left: 10%;
+        width: 250px;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .main-description{
+        padding-top: 40px;
+    }
+
+    .main-description h1{
+        font-family: 'Poppins', sans-serif;
+        color: #fff;
+        font-weight: bold;
+        font-size: 1.4rem;
+        text-align: center;
+    }
+    
+    .main-description p{
+        padding-top: 15px;
+        color: #fff;
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+    .main-description button{
+        margin-top: 20px;
+        padding: 10px;
+        color: hsl(257, 40%, 49%);
+        background: #fff;
+        border-radius: 50px;
+        border: 1px solid #fff;
+        width: 50%;
+        transition: all ease-in-out 0.3s;
+        text-align: center;
+        margin-left: 25%;
+    }
+
+    .container-title{
+        padding-top: 10px;
+        
+    }
+
+
+    .social-media{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin-right:20%;
+        margin-top: 3%;
+    }
+
+    .social-icon{
+        margin-top: 5%;
+        margin-left: 3%;
+    }
+
+    .attribution { font-size: 11px; text-align: center; display: none; }
+    .attribution a { color: white; }
+}
+
